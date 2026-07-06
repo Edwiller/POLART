@@ -5,7 +5,7 @@ import exception.SalaException;
 import model.SalaRefrigerada;
 import util.Console;
 
-public class SalaView {
+public class SalaView extends Baseview{
 
     private final SalaController controller;
 
@@ -83,7 +83,7 @@ public class SalaView {
 
             String localizacao = lerTexto("localizacao: ");
 
-            double tempMin = lerDoube("Temperatura mínima: ");
+            double tempMin = lerDouble("Temperatura mínima: ");
 
             double tempMax = lerDouble("Temperatura máxima: ");
             

@@ -1,8 +1,9 @@
 package model;
 
+
 public class Sensor {
 
-    private Integer id;
+     private Integer id;
     private String codigo;
     private String modelo;
     private Integer salaId;
@@ -71,5 +72,4 @@ public class Sensor {
                 '}';
 
     }
-
 }

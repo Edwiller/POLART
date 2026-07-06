@@ -7,7 +7,7 @@ import model.Operador;
 import model.Usuario;
 import util.Console;
 
-public class UsuarioView extends BaseView  {
+public class UsuarioView extends Baseview  {
 
     private final UsuarioController controller;
 

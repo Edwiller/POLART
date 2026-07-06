@@ -6,7 +6,7 @@ import control.SalaController;
 import control.SensorController;
 import control.TemperaturaController;
 import control.UsuarioController;
-
+import model.Alerta;
 import repository.AlertaRepository;
 import repository.ManutencaoRepository;
 import repository.SalaRepository;
@@ -77,7 +77,7 @@ public class Menu {
 
         temperaturaView = new TemperaturaView(temperaturaController);
 
-        alertaView = new Alertaview(alertaController);
+        alertaView = new AlertaView(alertaController);
 
         manutencaoView = new ManutencaoView(manutencaoController);
 
