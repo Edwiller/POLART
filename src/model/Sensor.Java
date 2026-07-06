@@ -1,18 +1,17 @@
 package model;
 
-
 public class Sensor {
 
-     private Integer id;
+    private Integer id;
     private String codigo;
     private String modelo;
     private Integer salaId;
     private Boolean ativo;
 
     public Sensor(Integer id,
-                  String codigo,
-                  String modelo,
-                  Integer salaId) {
+            String codigo,
+            String modelo,
+            Integer salaId) {
 
         this.id = id;
         this.codigo = codigo;
@@ -45,8 +44,6 @@ public class Sensor {
     public void setAtivo(Boolean ativo) {
         this.ativo = ativo;
     }
-
-   
 
     public void setCodigo(String codigo) {
         this.codigo = codigo;
