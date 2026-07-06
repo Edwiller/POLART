@@ -28,8 +28,7 @@ public class SensorRepository {
 
     public boolean atualizar(Sensor sensor) {
 
-        if (!sensores.containsKey(sensor.getId()))
-            return false;
+        if (!sensores.containsKey(sensor.getId())) return false;
 
         sensores.put(sensor.getId(), sensor);
 

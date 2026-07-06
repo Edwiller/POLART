@@ -10,9 +10,9 @@ public class Validacao {
 
     public static boolean temperaturaValida(
             double min,
-            double max) {
-
-        return min < max;
+            double max) 
+    {
+       return min < max;
 
     }
 

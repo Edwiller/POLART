@@ -27,47 +27,30 @@ public class Menu {
 
     public Menu() {
 
-        /*
-         * Repositories
-         */
-
         UsuarioRepository usuarioRepository = new UsuarioRepository();
+
         SalaRepository salaRepository = new SalaRepository();
+
         SensorRepository sensorRepository = new SensorRepository();
+
         TemperaturaRepository temperaturaRepository = new TemperaturaRepository();
+
         AlertaRepository alertaRepository = new AlertaRepository();
+        
         ManutencaoRepository manutencaoRepository = new ManutencaoRepository();
 
-        /*
-         * Controllers
-         */
+        UsuarioController usuarioController = new UsuarioController(usuarioRepository);
 
-        UsuarioController usuarioController =
-                new UsuarioController(usuarioRepository);
+        SalaController salaController = new SalaController(salaRepository);
 
-        SalaController salaController =
-                new SalaController(salaRepository);
+        SensorController sensorController = new SensorController(sensorRepository);
 
-        SensorController sensorController =
-                new SensorController(sensorRepository);
+        AlertaController alertaController = new AlertaController(alertaRepository);
 
-        AlertaController alertaController =
-                new AlertaController(alertaRepository);
+        ManutencaoController manutencaoController = new ManutencaoController(manutencaoRepository);
 
-        ManutencaoController manutencaoController =
-                new ManutencaoController(manutencaoRepository);
+        TemperaturaController temperaturaController = new TemperaturaController(temperaturaRepository,sensorRepository,salaRepository,alertaRepository);
 
-        TemperaturaController temperaturaController =
-                new TemperaturaController(
-                        temperaturaRepository,
-                        sensorRepository,
-                        salaRepository,
-                        alertaRepository
-                );
-
-        /*
-         * Views
-         */
 
         usuarioView = new UsuarioView(usuarioController);
 

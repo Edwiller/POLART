@@ -28,8 +28,7 @@ public class SalaRepository {
 
     public boolean atualizar(SalaRefrigerada sala) {
 
-        if (!salas.containsKey(sala.getId()))
-            return false;
+        if (!salas.containsKey(sala.getId())) return false;
 
         salas.put(sala.getId(), sala);
         return true;

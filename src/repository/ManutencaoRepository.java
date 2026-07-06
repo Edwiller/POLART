@@ -36,8 +36,7 @@ public class ManutencaoRepository {
 
     public boolean atualizar(Manutencao manutencao) {
 
-        if (!manutencoes.containsKey(manutencao.getId()))
-            return false;
+        if (!manutencoes.containsKey(manutencao.getId())) return false;
 
         manutencoes.put(manutencao.getId(), manutencao);
 

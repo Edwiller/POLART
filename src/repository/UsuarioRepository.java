@@ -50,8 +50,7 @@ public class UsuarioRepository {
 
     public boolean atualizar(Usuario usuario) {
 
-        if (!usuarios.containsKey(usuario.getId()))
-            return false;
+        if (!usuarios.containsKey(usuario.getId())) return false;
 
         usuarios.put(usuario.getId(), usuario);
 

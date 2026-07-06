@@ -89,12 +89,7 @@ public class SensorView {
             System.out.print("ID da Sala: ");
             Integer idSala = Integer.parseInt(Console.scanner.nextLine());
 
-            Sensor sensor = new Sensor(
-                    id,
-                    codigo,
-                    modelo,
-                    idSala
-            );
+            Sensor sensor = new Sensor(id,codigo,modelo,idSala);
 
             controller.cadastrarSensor(sensor);
 
@@ -192,12 +187,7 @@ public class SensorView {
             System.out.print("Novo ID da Sala: ");
             Integer idSala = Integer.parseInt(Console.scanner.nextLine());
 
-            Sensor atualizado = new Sensor(
-                    id,
-                    codigo,
-                    modelo,
-                    idSala
-            );
+            Sensor atualizado = new Sensor(id,codigo,modelo,idSala);
 
             controller.atualizarSensor(atualizado);
 

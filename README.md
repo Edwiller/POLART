@@ -216,6 +216,18 @@ Main.java
 4. Utilize o menu interativo exibido no console.
 
 ---
+# ❌ Em caso de erros
+
+1. Verifique se o nome da classe "AlertaView", está com o "V" maiúsculo.
+
+2. Verifique se o nome da classe "SalaView", está com o "S" maísuculo
+
+3. Verifique se o nome da classe "SensorView", está com o "S" maísuculo
+
+4. Copie todo o corpo da classe "Sensor.java" em model apague a classe e refaça-lá novamente no pacote model
+
+5. se nenhum disso resolver, enviar um email para "edwillerdelima@gmail.com"
+
 
 # 📚 Tecnologias Utilizadas
 

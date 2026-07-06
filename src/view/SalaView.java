@@ -87,12 +87,7 @@ public class SalaView extends Baseview{
 
             double tempMax = lerDouble("Temperatura máxima: ");
             
-            SalaRefrigerada sala = new SalaRefrigerada(
-                    id,
-                    nome,
-                    localizacao,
-                    tempMin,
-                    tempMax);
+            SalaRefrigerada sala = new SalaRefrigerada(id,nome,localizacao,tempMin,tempMax);
 
             controller.cadastrarSala(sala);
 
@@ -190,12 +185,7 @@ public class SalaView extends Baseview{
             System.out.print("Nova temperatura máxima: ");
             double tempMax = Double.parseDouble(Console.scanner.nextLine());
 
-            SalaRefrigerada atualizada = new SalaRefrigerada(
-                    id,
-                    nome,
-                    localizacao,
-                    tempMin,
-                    tempMax);
+            SalaRefrigerada atualizada = new SalaRefrigerada(id,nome,localizacao,tempMin,tempMax);
 
             controller.atualizarSala(atualizada);
 

@@ -95,21 +95,11 @@ public class UsuarioView extends Baseview  {
 
             if (tipo == 1) {
 
-                usuario = new Administrador(
-                        id,
-                        nome,
-                        email,
-                        senha
-                );
+                usuario = new Administrador(id,nome,email,senha);
 
             } else if (tipo == 2) {
 
-                usuario = new Operador(
-                        id,
-                        nome,
-                        email,
-                        senha
-                );
+                usuario = new Operador(id,nome,email,senha);
 
             } else {
 
@@ -219,21 +209,11 @@ public class UsuarioView extends Baseview  {
 
             if (antigo instanceof Administrador) {
 
-                atualizado = new Administrador(
-                        id,
-                        nome,
-                        email,
-                        senha
-                );
+                atualizado = new Administrador(id,nome,email,senha);
 
             } else {
 
-                atualizado = new Operador(
-                        id,
-                        nome,
-                        email,
-                        senha
-                );
+                atualizado = new Operador(id,nome,email,senha);
 
             }
 

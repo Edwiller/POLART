@@ -36,8 +36,7 @@ public class AlertaRepository {
 
     public boolean atualizar(Alerta alerta) {
 
-        if (!alertas.containsKey(alerta.getId()))
-            return false;
+        if (!alertas.containsKey(alerta.getId())) return false;
 
         alertas.put(alerta.getId(), alerta);
 
